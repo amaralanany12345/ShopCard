@@ -1,0 +1,156 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    font-family: system-ui;
+    position: relative;
+}
+.product {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    height: 350px;
+    background-color: rgb(229, 229, 229);
+}
+
+.product .title{
+    font-weight: bold;
+    position: absolute;
+    left: 80px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product .price{
+    font-size: 20px;
+    position: absolute;
+    left: 140px;
+    top: 290px;
+}
+button{
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(40, 191, 56);
+    color: white;
+    position: absolute;
+    left: 130px;
+    bottom: 10px;
+}
+.price::after{
+    content: " $";
+    color: rgb(40, 191, 56);
+
+}
+.image{
+    width: 170px;
+    height: 170px;
+    position: relative;
+    left: 80px;
+}
+.header{
+    position: relative;
+    width: 300px;
+    left: 1200px;
+    z-index: 2;
+}
+.header #card{
+    border-radius: 15px;
+    width: 300px;
+    position: absolute;
+    left: -50px;
+    background-color: rgb(170, 168, 164);
+    z-index: 2;
+    padding: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 3);
+    font-family:system-ui;
+}
+#card .cardImage{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 50px;
+    top: 10px;
+    padding: 30px;
+}
+.BuyNow{
+    border-radius: 5px;
+    position: absolute;
+    left: 225px;
+    top:20px ;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    background-color: rgb(31, 31, 76);
+    z-index: 4;
+}
+#total{
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: system-ui;
+}
+#total::before{
+    content: "Total is ";
+}
+#total::after{
+    content: " $";
+    color: green;
+}
+#card .increase{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(17, 7, 52);
+    color: white;
+    position: relative;
+    left: 80px;
+    font-size: 16px;
+    width: 30px;
+}
+#card .decrease{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(17, 7, 52);
+    color: white;
+    width: 30px;
+    position: relative;
+    left: 120px;
+    font-size: 16px;
+}
+#card .deleteItem{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(200, 64, 64);
+    color: white;
+    width: 30px;
+    position: relative;
+    left: 100px;
+}
+#card .cardPrice{
+    position: relative;
+    left: 130px;
+    font-size: 20px;
+}
+#card .cardPrice::after{
+    content: " $";
+    color: rgb(40, 191, 56);
+}
+#card .cardTitle{
+    position: relative;
+    left: 70px;
+    font-weight: bold;
+    max-width: 200px;
+}
